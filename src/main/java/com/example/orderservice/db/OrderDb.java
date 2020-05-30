@@ -11,10 +11,7 @@ import java.util.List;
 public class OrderDb {
 
     private final List<Order> orderList = new ArrayList<>(List.of(
-            new Order("1",List.of(
-                    new Product("4", "Funghi")
-            ))
-    ));
+            new Order("1",List.of(new Product("4", "Funghi")))));
 
 
     public void addOrder (Order order){

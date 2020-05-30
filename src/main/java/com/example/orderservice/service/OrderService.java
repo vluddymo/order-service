@@ -38,6 +38,6 @@ public class OrderService {
                 return order;
             }
         }
-        throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Order does not exist");
+        throw new ResponseStatusException(HttpStatus.BAD_REQUEST);
     }
 }

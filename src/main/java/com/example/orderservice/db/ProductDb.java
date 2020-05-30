@@ -8,6 +8,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 @Service
@@ -26,9 +28,6 @@ public class ProductDb {
 
     ));
 
-    public void addProduct(Product product) {
-        this.productList.add(product);
-    }
 
     public List<Product> getProductList() {
         return this.productList;
@@ -55,5 +54,9 @@ public class ProductDb {
 
     public void clearDb() {
         productList.clear();
+    }
+
+    public void addProduct(Product product) {
+        productList.add(product);
     }
 }
